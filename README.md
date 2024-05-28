@@ -12,13 +12,13 @@
 
 ## Steps for creating the ARI Program:
 
-1. **Reading File**: The script will read the content of the file provided as an argument.
+1. **Reading File**: The script will read the content of the file provided as an argument using **`cat`**.
 
-2. **Text elements calculation**: Utilize bash commands to count the characters, words, and sentences in the text.
+2. **Text elements calculation**: Utilize bash commands like **`wc -m`**, **`wc -w`**,and **`grep`** for characters, words and sentences respectively in the text.
 
 3. **ARI Calculation**: Apply the ARI formula using the calculated values.
 
-4. **Displaying the Result**: Output the computed ARI score.
+4. **Displaying the Result**: Output the computed ARI score. Used **`%.2f`** for formatting floating-point numbers.
 
 5. **Finalizing the Script**: Combine all the components to create the final bash script.
 
