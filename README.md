@@ -12,7 +12,7 @@
 
 ## Steps for creating the ARI Program:
 
-1. **Reading**: The script will read the content of the file provided as an argument.
+1. **Reading File**: The script will read the content of the file provided as an argument.
 
 2. **Text elements calculation**: Utilize bash commands to count the characters, words, and sentences in the text.
 
@@ -24,19 +24,19 @@
 
 ## Challenges Faced:
 
-<span style="color:red">**Handling Floating-Point Numbers**</span>: Bash does not support floating-point arithmetic. It only supports integer arithmetic. So we need to use external tools.
+- **Handling Floating-Point Numbers**: Bash does not support floating-point arithmetic. It only supports integer arithmetic. So we need to use external tools.
 
-<span style="color:red">**Text Counting**</span>: Accurately analyzing text to count characters, words, and sentences is challenging. This requires careful handling of whitespace, punctuation, and special characters.
+- **Text Counting**: Accurately analyzing text to count characters, words, and sentences is challenging. This requires careful handling of whitespace, punctuation, and special characters.
 
-<span style="color:red">**Precision Issues**</span>: When performing arithmetic operations like division, precision issues can arise due to the limited precision of floating-point arithmetic.
+- **Precision Issues**: When performing arithmetic operations like division, precision issues can arise due to the limited precision of floating-point arithmetic.
 
 ## Solutions Implemented:
 
-<span style="color:green">**'bc'**</span> is used to handle floating-point numbers when applying the ARI equation.
+- **'bc'** is used to handle floating-point numbers when applying the ARI equation.
 
-<span style="color:green">**'grep'**</span> with regular expressions was used to count sentences more precisely.
+- **'grep'** with regular expressions was used to count sentences more precisely.
 
-The <span style="color:green">**`printf`**</span> command with the <span style="color:green">**`%.2f`**</span> format specifier was used to display the ARI score with two decimal places, providing a clear and precise output.
+- **`printf`** command with the **`%.2f`** format specifier was used to display the ARI score with two decimal places, providing a clear and precise output.
 
 ## Conclusion:
 
