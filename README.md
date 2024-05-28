@@ -1,55 +1,43 @@
-## Automated Readability Index (ARI)
+# Automated Readability Index (ARI)
 
-     The Automated Readability Index (ARI) is a test used to measure how easy or difficult a text is to read. The ARI formula gives a number that estimates the grade level a person needs to be at to understand the text.
+*The Automated Readability Index (ARI) is a test used to measure how easy or difficult a text is to read. The ARI formula gives a number that estimates the grade level a person needs to be at to understand the text.*
 
-The formula for ARI is:
+### The formula for ARI is:
 
-     ARI=4.71×(characterswords)+0.5×(wordssentences)−21.43ARI=4.71×(wordscharacters​)+0.5×(sentenceswords​)−21.43
+**ARI = 4.71 × (characters / words) + 0.5 × (words / sentences) − 21.43**
 
-### Objective:
+## Objective:
 
-    This project aims to create a bash script for calculating the ARI score of a text file. The script will take a file as input, analyze its content, apply the ARI formula, and output the readability score.
+*This project aims to create a bash script for calculating the ARI score of a text file. The script will take a file as input, analyze its content, apply the ARI formula, and output the readability score.*
 
-### Steps for creating the ARI Program:
+## Steps for creating the ARI Program:
 
-    File Reading: The script will read the content of the file provided as an argument.
+1. **Reading**: The script will read the content of the file provided as an argument.
 
-    Text elements calculation: Utilize bash commands to count the characters, words, and sentences in the text.
+2. **Text elements calculation**: Utilize bash commands to count the characters, words, and sentences in the text.
 
-    ARI Calculation: Apply the ARI formula using the calculated values.
+3. **ARI Calculation**: Apply the ARI formula using the calculated values.
 
-    Displaying the Result: Output the computed ARI score.
+4. **Displaying the Result**: Output the computed ARI score.
 
-    Finalizing the Script: Combine all the components to create the final bash script.
-    
-### Challenges Faced:
+5. **Finalizing the Script**: Combine all the components to create the final bash script.
 
-    Handling Floating-Point Numbers: Bash does not support floating-point arithmetic. It only supports integer arithmetic. So we need to use external tools.
+## Challenges Faced:
 
-    Text Counting: Accurately analyzing text to count characters, words, and sentences is challenging. This requires careful handling of whitespace, punctuation, and special characters.
+<span style="color:red">**Handling Floating-Point Numbers**</span>: Bash does not support floating-point arithmetic. It only supports integer arithmetic. So we need to use external tools.
 
-    Precision Issues: When performing arithmetic operations like division, precision issues can arise due to the limited precision of floating-point arithmetic.
+<span style="color:red">**Text Counting**</span>: Accurately analyzing text to count characters, words, and sentences is challenging. This requires careful handling of whitespace, punctuation, and special characters.
 
+<span style="color:red">**Precision Issues**</span>: When performing arithmetic operations like division, precision issues can arise due to the limited precision of floating-point arithmetic.
 
-### Solutions Implemented:
+## Solutions Implemented:
 
-    Handling Floating-Point Numbers: 'bc' is used to handle floating point numbers when applying ARI equation.
+<span style="color:green">**'bc'**</span> is used to handle floating-point numbers when applying the ARI equation.
 
-    Text Counting: 'grep' with regular expressions was used to count sentences more precisely.
+<span style="color:green">**'grep'**</span> with regular expressions was used to count sentences more precisely.
 
-    Precision Issues: The `printf` command with the `%.2f` format specifier was used to display ARI score with two decimal places, providing a clear and precise output. 
+The <span style="color:green">**`printf`**</span> command with the <span style="color:green">**`%.2f`**</span> format specifier was used to display the ARI score with two decimal places, providing a clear and precise output.
 
+## Conclusion:
 
-### Conclusion:
-    
-    Using the above steps the script reads the text file and determine the count of characters, words, and sentences. Checks conditions, applied ARI equation and give the output with grade level. Thus successfully calculates the Automated Readability Index of a given text file. This script is helpful to understand the readability level of text files ranging from kindergarden to college. 
-
-
-
-
-    
-    
-    
-    
-
-
+*Using the above steps, the script reads the text file and determines the count of characters, words, and sentences. It checks conditions, applies the ARI equation, and gives the output with the grade level. Thus, it successfully calculates the Automated Readability Index of a given text file. This script is helpful to understand the readability level of text files ranging from kindergarten to college.*
